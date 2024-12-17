@@ -1,0 +1,46 @@
+Solana Blockchain Knowledge Base
+
+1. What is Solana?
+Solana is a high-performance blockchain that supports decentralized applications and crypto projects. It is known for its speed and low transaction costs.
+
+2. How fast is Solana?
+Solana’s theoretical transaction speed is 65,000 TPS (transactions per second) with an average block time of approximately 400 milliseconds.
+
+3. What is SOL?
+SOL is the native cryptocurrency of the Solana network, used for transaction fees, staking, and governance.
+
+4. How do I stake SOL?
+To stake SOL tokens, use a Solana-compatible wallet like Phantom or Solflare. Delegate your SOL to a validator to help secure the network and earn staking rewards.
+
+5. What are Solana transaction fees?
+Solana transaction fees are very low, typically around 0.00001 SOL per transaction.
+
+Jupiter Aggregator Knowledge Base
+
+1. What is Jupiter?
+Jupiter is a decentralized liquidity aggregator on the Solana blockchain. It searches across multiple liquidity pools to provide the best swap rates for tokens.
+
+2. How do token swaps work on Jupiter?
+Jupiter compares liquidity across decentralized exchanges (DEXs) like Orca, Serum, and Raydium to provide users with the optimal rate for swapping tokens.
+
+3. What are the fees for using Jupiter?
+Jupiter does not charge additional platform fees. However, you will pay Solana network fees and any liquidity provider fees during the swap.
+
+4. Is Jupiter safe to use?
+Yes, Jupiter is a trusted aggregator on the Solana blockchain that interacts directly with decentralized liquidity pools without custodial risks.
+
+5. Which wallets are supported on Jupiter?
+Popular wallets like Phantom, Solflare, and Ledger are compatible with Jupiter for performing swaps.
+
+Common Topics
+
+1. Solana Wallets:
+	•	Popular wallets: Phantom, Solflare, Ledger, Trust Wallet
+	•	Purpose: Manage SOL, stake tokens, interact with DApps
+
+2. Token Swapping on Solana:
+	•	Use Jupiter for finding the best swap rates.
+	•	Example: Swap SOL for USDC.
+
+3. What are validators?
+Validators are nodes on Solana that verify and secure transactions. You can delegate your SOL tokens to them to participate in staking.
