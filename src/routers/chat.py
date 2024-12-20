@@ -16,7 +16,7 @@ class ChatRequest(BaseModel):
 async def chat(request: ChatRequest):
     try:
         response = decision_maker.query(request.query)
-        decision_maker.parse_response(response)
-        return response
+        parsed_response=decision_maker.parse_response(response)
+        return parsed_response
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
