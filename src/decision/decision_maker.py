@@ -44,19 +44,41 @@ class DecisionMaker:
             print(f"An unexpected error occurred: {e}")
             print(f"Response: {response}")
 
-    def handle_solana_api_bot(self, details: str, parameters: dict) -> None:
+    def handle_solana_api_bot(self, details: str, parameters: dict) -> dict:
         try:
             payload = {"query": parameters.get("message", "")}
-            #print(f"Payload for Solana API Bot: {payload}")
             response = self.api_client.post("solana_api_bot/chat/", payload)
-            #print("Response from Solana API Bot:", response)
-            #if isinstance(response, str):
-                #print("Solana API Bot Response (String):", response)
-            #else:
-            #    print("Solana API Bot Response (JSON):", response)
-
-            return response
-        except requests.exceptions.HTTPError as e:
-            print(f"HTTP error occurred: {e.response.status_code} - {e.response.text}")
+            
+            #print(f"Debug - Raw API Response: {response}")  # Debug line
+            
+            if not response:
+                #print("Error: Empty response from API")
+                return {"agent_action": "solana_call", "parameters": {}}
+                
+            if isinstance(response, dict):
+                if "message" in response:
+                    try:
+                        message_data = json.loads(response["message"])
+                        #print(f"Debug - Parsed message: {message_data}")  # Debug line
+                        
+                        if "payload" in message_data:
+                            return {
+                                "agent_action": "solana_call",
+                                "parameters": {
+                                    "responding_message": message_data["responding_message"],
+                                    "payload": message_data["payload"]
+                                }
+                            }
+                        else:
+                            print("Error: No payload in message_data")
+                    except json.JSONDecodeError as e:
+                        print(f"Error parsing message JSON: {e}")
+                else:
+                    print("Error: No message field in response")
+            
+            print("Error: Response not in expected format")
+            return {"agent_action": "solana_call", "parameters": {}}
+            
         except Exception as e:
             print(f"Failed to handle solana_api_bot action: {e}")
+            return {"agent_action": "solana_call", "parameters": {}}

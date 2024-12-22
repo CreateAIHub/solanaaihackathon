@@ -12,91 +12,12 @@
   {
     "name": "USD Coin",
     "symbol": "USDC",
-    "address": "A1b2C3d4E5f6G7h8I9j0K1l2M3n4O5p6Q7r8S9t0U1v2"
+    "address": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v"
   },
-  {
-    "name": "Chainlink",
-    "symbol": "LINK",
-    "address": "2wpTofQ8SkACrkZWr5iRk8e9pAFwX3q6R6LCuF7CqrV7"
-  },
-  {
-    "name": "Render",
-    "symbol": "RNDR",
-    "address": "RNDR1Q2W3E4R5T6Y7U8I9O0P1A2S3D4F5G6H7J8K9L0M"
-  },
-  {
+{
     "name": "Bonk",
-    "symbol": "BONK",
-    "address": "DezX3b9DqQK1b1YzRr9iD8Q6E3eF9W3J4Xw3fh9i1e8Q"
+    "symbol": "Bonk",
+    "address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263"
   },
-  {
-    "name": "Helium",
-    "symbol": "HNT",
-    "address": "hntyVPJjcNo1qZzLBEvQ6X9h3S3eF9W3J4Xw3fh9i1e8Q"
-  },
-  {
-    "name": "Pyth Network",
-    "symbol": "PYTH",
-    "address": "Pyth1Q2W3E4R5T6Y7U8I9O0P1A2S3D4F5G6H7J8K9L0M"
-  },
-  {
-    "name": "The Graph",
-    "symbol": "GRT",
-    "address": "GRT1Q2W3E4R5T6Y7U8I9O0P1A2S3D4F5G6H7J8K9L0M"
-  },
-  {
-    "name": "Raydium",
-    "symbol": "RAY",
-    "address": "4k3Dyjzvzp8eM8t1A2S3D4F5G6H7J8K9L0M1N2O3P4Q5"
-  },
-  {
-    "name": "Serum",
-    "symbol": "SRM",
-    "address": "SRM1Q2W3E4R5T6Y7U8I9O0P1A2S3D4F5G6H7J8K9L0M"
-  },
-  {
-    "name": "Mango",
-    "symbol": "MNGO",
-    "address": "MNGO1Q2W3E4R5T6Y7U8I9O0P1A2S3D4F5G6H7J8K9L0M"
-  },
-  {
-    "name": "Oxygen",
-    "symbol": "OXY",
-    "address": "OXY1Q2W3E4R5T6Y7U8I9O0P1A2S3D4F5G6H7J8K9L0M"
-  },
-  {
-    "name": "Maps",
-    "symbol": "MAPS",
-    "address": "MAPS1Q2W3E4R5T6Y7U8I9O0P1A2S3D4F5G6H7J8K9L0M"
-  },
-  {
-    "name": "Star Atlas",
-    "symbol": "ATLAS",
-    "address": "ATLAS1Q2W3E4R5T6Y7U8I9O0P1A2S3D4F5G6H7J8K9L0M"
-  },
-  {
-    "name": "Kin",
-    "symbol": "KIN",
-    "address": "KIN1Q2W3E4R5T6Y7U8I9O0P1A2S3D4F5G6H7J8K9L0M"
-  },
-  {
-    "name": "Saber",
-    "symbol": "SBR",
-    "address": "SBR1Q2W3E4R5T6Y7U8I9O0P1A2S3D4F5G6H7J8K9L0M"
-  },
-  {
-    "name": "Orca",
-    "symbol": "ORCA",
-    "address": "ORCA1Q2W3E4R5T6Y7U8I9O0P1A2S3D4F5G6H7J8K9L0M"
-  },
-  {
-    "name": "Step Finance",
-    "symbol": "STEP",
-    "address": "STEP1Q2W3E4R5T6Y7U8I9O0P1A2S3D4F5G6H7J8K9L0M"
-  },
-  {
-    "name": "Media Network",
-    "symbol": "MEDIA",
-    "address": "MEDIA1Q2W3E4R5T6Y7U8I9O0P1A2S3D4F5G6H7J8K9L0M"
-  }
+
 ]
