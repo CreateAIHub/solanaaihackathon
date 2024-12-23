@@ -5,6 +5,9 @@ class ActionType(Enum):
     SWAP = "swap"
     ASKING_MORE_DETAILS = "asking_more_details"
     SOLANA_API_BOT = "solana_api_bot"
+    STAKE_WITH_JUP = "stakeWithJup"  # Add new action
+    TRANSFER = "transfer"  # Add new action 
+    DEPLOY_TOKEN = "deploy_token"  # Add new action
     SOMETHING_ELSE = "something_else"
 
 class ActionHandler:
@@ -54,6 +57,27 @@ class ActionHandler:
         "agent_action": "solana_api_bot",
         "parameters": parameters
     }
+
+    @staticmethod
+    def handle_stake_with_jup(details: str, parameters: dict) -> dict:
+        return {
+            "agent_action": "stakeWithJup",
+            "parameters": parameters
+        }
+
+    @staticmethod 
+    def handle_transfer(details: str, parameters: dict) -> dict:
+        return {
+            "agent_action": "transfer",
+            "parameters": parameters
+        }
+
+    @staticmethod
+    def handle_deploy_token(details: str, parameters: dict) -> dict:
+        return {
+            "agent_action": "deploy_token", 
+            "parameters": parameters
+        }
 
     @staticmethod
     def handle_default(details: str) -> None:

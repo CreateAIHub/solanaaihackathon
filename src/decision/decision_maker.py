@@ -10,7 +10,10 @@ class DecisionMaker:
             ActionType.KNOWLEDGE_BASE.value: ActionHandler.handle_knowledge_base,
             ActionType.SWAP.value: ActionHandler.handle_swap,
             ActionType.ASKING_MORE_DETAILS.value: ActionHandler.handle_asking_more_details,
-            ActionType.SOLANA_API_BOT.value: self.handle_solana_api_bot  # Add this line
+            ActionType.SOLANA_API_BOT.value: self.handle_solana_api_bot,
+            ActionType.STAKE_WITH_JUP.value: ActionHandler.handle_stake_with_jup,
+            ActionType.TRANSFER.value: ActionHandler.handle_transfer,
+            ActionType.DEPLOY_TOKEN.value: ActionHandler.handle_deploy_token
         }
 
     def query(self, question: str) -> dict:
