@@ -1,0 +1,27 @@
+# Project Overview
+This project provides a decision-making agent for the Solana blockchain. It processes user queries to either access a knowledge base, perform a token swap, or collect more details.
+
+## Installation
+Use `requirements.txt` to install dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+## Running Locally
+Start the FastAPI server from main.py:
+
+## Deployment
+See render.yaml for a sample Render service configuration. It defines the build and start commands for deployment.
+
+## Structure
+• The main application entry point is main.py.
+• Routing is configured in chat.py.
+• API configuration is in config.py.
+• The decision logic resides in DecisionMaker.
+• Handlers for different actions are in action_handler.py.
+
+## Usage
+Send a POST request to “/api/v1/chat” with a JSON body containing a “query” string.
+The system uses DecisionMaker to decide whether to invoke knowledge base lookups or token swap logic.
+Token swaps rely on the file coin_list.txt to fetch mint addresses.
