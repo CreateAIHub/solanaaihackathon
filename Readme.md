@@ -24,6 +24,7 @@ uvicorn src.main:app --host 0.0.0.0 --port 8000
 ## Deployment
 
 Refer to the `render.yaml` file for a sample Render service configuration. It defines the build and start commands required for deployment. 
+
 **Note**: Since we are using a free plan, the server enters sleep mode when idle. This causes a delay of approximately 30 seconds for the first request as the server wakes up.
 
 ## Project Structure
