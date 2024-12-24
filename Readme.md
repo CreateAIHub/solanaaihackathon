@@ -35,6 +35,16 @@ Refer to the `render.yaml` file for a sample Render service configuration. It de
 - **`DecisionMaker`**: Contains the decision-making logic.
 - **`action_handler.py`**: Includes handlers for different actions.
 
+## Assistants Used
+
+We leveraged two AI agents from [Assister.ai](https://build.assisterr.ai) in this project:
+
+1. **[Decision Maker Agent](https://build.assisterr.ai/model/decision_maker)**: This is our primary decision-making agent. It processes user queries, determines intents, and orchestrates actions such as accessing the knowledge base, executing token swaps, and performing smart contract interactions.
+
+2. **[Solana API Bot](https://build.assisterr.ai/model/solana_api_bot)**: This agent supports the generation of JSON RPC requests when required, facilitating seamless integration with Solana's blockchain.
+
+These agents together form the backbone of our decision-making and execution pipeline, enabling efficient and intelligent query handling.
+
 ## Usage
 
 To interact with the system, send a POST request to:
